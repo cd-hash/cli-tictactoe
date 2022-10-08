@@ -1,0 +1,11 @@
+/resources/public/js/compiled/**
+figwheel_server.log
+pom.xml
+*.jar
+*.class
+/lib/
+/classes/
+/out/
+/target/
+.repl
+.nrepl-port
