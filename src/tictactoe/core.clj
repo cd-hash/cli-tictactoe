@@ -7,9 +7,15 @@
     :o :o
     nil))
 
+(defn valid-location [board square]
+  (if (and (= (get board square) :empty) (some? square))
+   true
+   false))
+
 (defn place-piece [board location player]
-  (when (= (get board location) :empty)
-    (assoc board location player)))
+  (if (valid-location board location)
+    (assoc board location player)
+    false))
 
 
 (defn play-move [board row col player]
