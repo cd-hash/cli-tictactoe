@@ -4,6 +4,8 @@
 ; Please see https://calva.io/output/ for more info.
 ; Happy coding! ♥️
 
+; Connecting ...
+; No nrepl port file found.
 ; Jacking in...
 ; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.0.0"},cider/cider-nrepl {:mvn/version,"0.28.5"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
 ; Hooking up nREPL sessions...
@@ -18,122 +20,18 @@
 clj꞉user꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉user꞉> 
-#'tictactoe.square/upper-bound
-clj꞉tictactoe.square꞉> 
 ; Evaluating file: square.clj
-#'tictactoe.square/create-new-square
+nil
 clj꞉tictactoe.square꞉> 
-(range upper-bound)
-(0 1 2)
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/create-squares
-clj꞉tictactoe.square꞉> 
-(create-new-square)
-; Execution error (ArityException) at tictactoe.square/eval7663 (REPL:31).
-; Wrong number of args (0) passed to: tictactoe.square/create-new-square
-clj꞉tictactoe.square꞉> (tictactoe.square/create-new-square)
-; Execution error (ArityException) at tictactoe.square/eval7665 (REPL:34).
-; Wrong number of args (0) passed to: tictactoe.square/create-new-square
-clj꞉tictactoe.square꞉> 
-(for [row (range upper-bound)
-      col (range upper-bound)]
-  [row col])
-([0 0] [0 1] [0 2] [1 0] [1 1] [1 2] [2 0] [2 1] [2 2])
-clj꞉tictactoe.square꞉> 
-(create-new-square)
-#'tictactoe.square/create-squares
-clj꞉tictactoe.square꞉> 
-(create-new-square)
-; Execution error (ArityException) at tictactoe.square/eval7718 (REPL:46).
-; Wrong number of args (0) passed to: tictactoe.square/create-new-square
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/create-squares
-clj꞉tictactoe.square꞉> 
-(create-new-square)
-; Execution error (ArityException) at tictactoe.square/eval7745 (REPL:52).
-; Wrong number of args (0) passed to: tictactoe.square/create-new-square
-clj꞉tictactoe.square꞉> 
-(create-new-square )
-; Execution error (ArityException) at tictactoe.square/eval7747 (REPL:56).
-; Wrong number of args (0) passed to: tictactoe.square/create-new-square
-clj꞉tictactoe.square꞉> 
-; Evaluating file: square.clj
-#'tictactoe.square/create-squares
-clj꞉tictactoe.square꞉> 
-(create-new-square 1 2)
-{:row 1, :col 2}
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/create-squares
-clj꞉tictactoe.square꞉> 
-([0 0] [0 1] [0 2] [1 0] [1 1] [1 2] [2 0] [2 1] [2 2])
-clj꞉tictactoe.square꞉> 
-(create-squares)
-([0 0] [0 1] [0 2] [1 0] [1 1] [1 2] [2 0] [2 1] [2 2])
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/create-board
-clj꞉tictactoe.square꞉> 11
-({[0 0] :empty}
- {[0 1] :empty}
- {[0 2] :empty}
- {[1 0] :empty}
- {[1 1] :empty}
- {[1 2] :empty}
- {[2 0] :empty}
- {[2 1] :empty}
- {[2 2] :empty})
-clj꞉tictactoe.square꞉> 
+; Syntax error compiling at (src/tictactoe/core.clj:12:14).
+; No such namespace: square
+clj꞉tictactoe.core꞉> 
 ; Evaluating file: core.clj
-#'tictactoe.core/check-player
-clj꞉tictactoe.core꞉> 
-(let [player :x]
-  (case player
-    :x :x
-    :o :o
-    nil))
-:x
-clj꞉tictactoe.core꞉> 
-(let [player :o]
-  (case player
-    :x :x
-    :o :o
-    nil))
-:o
-clj꞉tictactoe.core꞉> 
-(let [player :y]
-  (case player
-    :x :x
-    :o :o
-    nil))
 nil
 clj꞉tictactoe.core꞉> 
-#'tictactoe.square/create-squares
-clj꞉tictactoe.square꞉> 
-; Evaluating file: square.clj
-nil
-clj꞉tictactoe.square꞉> 
-({:row 0, :col 0}
- {:row 0, :col 1}
- {:row 0, :col 2}
- {:row 1, :col 0}
- {:row 1, :col 1}
- {:row 1, :col 2}
- {:row 2, :col 0}
- {:row 2, :col 1}
- {:row 2, :col 2})
-clj꞉tictactoe.square꞉> 
-({{:row 0, :col 0} :empty}
- {{:row 0, :col 1} :empty}
- {{:row 0, :col 2} :empty}
- {{:row 1, :col 0} :empty}
- {{:row 1, :col 1} :empty}
- {{:row 1, :col 2} :empty}
- {{:row 2, :col 0} :empty}
- {{:row 2, :col 1} :empty}
- {{:row 2, :col 2} :empty})
-clj꞉tictactoe.square꞉> 
-; Evaluating file: square.clj
-nil
-clj꞉tictactoe.square꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+board
 {{:row 1, :col 1} :empty,
  {:row 0, :col 2} :empty,
  {:row 2, :col 2} :empty,
@@ -143,98 +41,141 @@ clj꞉tictactoe.square꞉> 
  {:row 1, :col 0} :empty,
  {:row 2, :col 0} :empty,
  {:row 1, :col 2} :empty}
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/board
-clj꞉tictactoe.square꞉> 
-(get board {:row 0 :col 0})
+clj꞉tictactoe.core꞉> 
+(get board {:row 1 :col 1})
 :empty
-clj꞉tictactoe.square꞉> 
-(assoc board {:row 0 :col 0} :x)
-{{:row 1, :col 1} :empty,
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+; Syntax error compiling at (src/tictactoe/core.clj:17:14).
+; Unable to resolve symbol: place-piece in this context
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :x,
  {:row 0, :col 2} :empty,
  {:row 2, :col 2} :empty,
  {:row 0, :col 1} :empty,
- {:row 0, :col 0} :x,
+ {:row 0, :col 0} :empty,
  {:row 2, :col 1} :empty,
  {:row 1, :col 0} :empty,
  {:row 2, :col 0} :empty,
  {:row 1, :col 2} :empty}
-clj꞉tictactoe.square꞉> 
-({:row 0 :col 0} board)
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
 nil
-clj꞉tictactoe.square꞉> 
-(get board {:row 0 :col 0})
-:empty
-clj꞉tictactoe.square꞉> 
-(board)
-; Execution error (ArityException) at tictactoe.square/eval8029 (REPL:169).
-; Wrong number of args (0) passed to: clojure.lang.PersistentHashMap
-clj꞉tictactoe.square꞉> 
-; Evaluating file: square.clj
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
 nil
-clj꞉tictactoe.square꞉> 
-(get board {:row 0 :col 0})
-:empty
-clj꞉tictactoe.square꞉> 
-(assoc! board {:row 0 :col 0} :x)
-; Execution error (ClassCastException) at tictactoe.square/eval8090 (REPL:179).
-; class clojure.lang.PersistentHashMap cannot be cast to class clojure.lang.ITransientAssociative (clojure.lang.PersistentHashMap and clojure.lang.ITransientAssociative are in unnamed module of loader 'app')
-clj꞉tictactoe.square꞉> 
-(let board (assoc board {:row 0 :col 0} :x))
-; Syntax error macroexpanding clojure.core/let at (.calva/output-window/output.calva-repl:183:1).
-; board - failed: vector? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
-clj꞉tictactoe.square꞉> 
-(def updated-board (assoc board {:row 0 :col 0} :x))
-#'tictactoe.square/updated-board
-clj꞉tictactoe.square꞉> 
-updated-board
-{{:row 1, :col 1} :empty,
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :x,
  {:row 0, :col 2} :empty,
  {:row 2, :col 2} :empty,
  {:row 0, :col 1} :empty,
- {:row 0, :col 0} :x,
+ {:row 0, :col 0} :empty,
  {:row 2, :col 1} :empty,
  {:row 1, :col 0} :empty,
  {:row 2, :col 0} :empty,
  {:row 1, :col 2} :empty}
-clj꞉tictactoe.square꞉> 
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
 nil
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/board
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/board
-clj꞉tictactoe.square꞉> 
-{{:row 1, :col 1} :empty,
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :x,
  {:row 0, :col 2} :empty,
  {:row 2, :col 2} :empty,
  {:row 0, :col 1} :empty,
- {:row 0, :col 0} :x,
+ {:row 0, :col 0} :empty,
  {:row 2, :col 1} :empty,
  {:row 1, :col 0} :empty,
  {:row 2, :col 0} :empty,
  {:row 1, :col 2} :empty}
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/board
-clj꞉tictactoe.square꞉> 
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :x,
+ {:row 0, :col 2} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 0, :col 1} :empty,
+ {:row 0, :col 0} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 1, :col 0} :empty,
+ {:row 2, :col 0} :empty,
+ {:row 1, :col 2} :empty}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+nil
+clj꞉tictactoe.core꞉> 
+nil
+clj꞉tictactoe.core꞉> 
+:error
+clj꞉tictactoe.core꞉> 
+(def my-map {:a 1})
+#'tictactoe.core/my-map
+clj꞉tictactoe.core꞉> 
+(assoc my-map :b 2)
+{:a 1, :b 2}
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+board
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
 {{:row 1, :col 1} :empty,
  {:row 0, :col 2} :empty,
  {:row 2, :col 2} :empty,
  {:row 0, :col 1} :empty,
- {:row 0, :col 0} :x,
+ {:row 0, :col 0} :empty,
  {:row 2, :col 1} :empty,
- {:row 1, :col 0} :o,
+ {:row 1, :col 0} :empty,
  {:row 2, :col 0} :empty,
  {:row 1, :col 2} :empty}
-clj꞉tictactoe.square꞉> 
-#'tictactoe.square/board
-clj꞉tictactoe.square꞉> 
-{{:row 1, :col 1} :empty,
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+nil
+clj꞉tictactoe.core꞉> 
+(if-some [player (check-player :x)]
+  player
+  :error)
+:x
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :x,
  {:row 0, :col 2} :empty,
- {:row 2, :col 2} :x,
+ {:row 2, :col 2} :empty,
  {:row 0, :col 1} :empty,
- {:row 0, :col 0} :x,
+ {:row 0, :col 0} :empty,
  {:row 2, :col 1} :empty,
- {:row 1, :col 0} :o,
+ {:row 1, :col 0} :empty,
  {:row 2, :col 0} :empty,
  {:row 1, :col 2} :empty}
-clj꞉tictactoe.square꞉> 
+clj꞉tictactoe.core꞉> 
