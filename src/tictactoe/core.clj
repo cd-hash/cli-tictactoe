@@ -28,5 +28,7 @@
 
 (comment
   (def board (square/create-board))
-  (def board (play-move board 1 1 :x))
+  (valid-location board (square/create-new-square 1 2))
+  (def board (place-piece board (square/create-new-square 1 2) :x))
+  (def board (play-move board 2 2 :o))
   board)

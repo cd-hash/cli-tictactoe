@@ -20,3 +20,91 @@
 clj꞉user꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉user꞉> 
+; Syntax error compiling at (src/tictactoe/core.clj:30:3).
+; No such namespace: square
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (src/tictactoe/core.clj:22:14).
+; No such var: square/create-new-square
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉tictactoe.core꞉> 
+; Syntax error compiling at (src/tictactoe/core.clj:30:3).
+; No such var: square/create-board
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (src/tictactoe/core.clj:22:14).
+; No such var: square/create-new-square
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (src/tictactoe/core.clj:22:14).
+; No such var: square/create-new-square
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉tictactoe.core꞉> 
+; Evaluating file: square.clj
+nil
+clj꞉tictactoe.square꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+false
+clj꞉tictactoe.core꞉> 
+#function[tictactoe.square/create-new-square]
+clj꞉tictactoe.core꞉> 
+{:row 1, :col 2}
+clj꞉tictactoe.core꞉> 
+false
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+board
+#function[tictactoe.square/create-board]
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+true
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+true
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 0, :col 2} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 0, :col 1} :empty,
+ {:row 0, :col 0} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 1, :col 0} :empty,
+ {:row 2, :col 0} :empty,
+ {:row 1, :col 2} :x}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+true
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 0, :col 2} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 0, :col 1} :empty,
+ {:row 0, :col 0} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 1, :col 0} :empty,
+ {:row 2, :col 0} :empty,
+ {:row 1, :col 2} :x}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 0, :col 2} :empty,
+ {:row 2, :col 2} :o,
+ {:row 0, :col 1} :empty,
+ {:row 0, :col 0} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 1, :col 0} :empty,
+ {:row 2, :col 0} :empty,
+ {:row 1, :col 2} :x}
+clj꞉tictactoe.core꞉> 
