@@ -25,7 +25,7 @@
   (let [tile (square/create-new-square row col)]
        (if-some [player (check-player player)]
          (place-piece board tile player)
-         :invalid-player)))
+         board)))
 
 
 (comment

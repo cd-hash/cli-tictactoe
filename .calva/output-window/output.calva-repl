@@ -420,3 +420,120 @@ clj꞉tictactoe.core꞉> 
 clj꞉tictactoe.core꞉> 
 false
 clj꞉tictactoe.core꞉> 
+; Evaluating file: cli.clj
+#'tictactoe.cli/show
+clj꞉tictactoe.cli꞉> 
+board
+; Syntax error compiling at (.calva/output-window/output.calva-repl:0:0).
+; Unable to resolve symbol: board in this context
+clj꞉tictactoe.cli꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+board
+:invalid-player
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :empty,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/show board 1 1)
+" "
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/show board 2 2)
+":o"
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/show board 2 2)
+":o"
+clj꞉tictactoe.core꞉> 
+(name :o)
+"o"
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/)
+; Evaluating file: cli.clj
+#'tictactoe.cli/display-board
+clj꞉tictactoe.cli꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/display-board board)
+"  |   |  \n----------------\n  |   |  \n----------------\n  |   |  \n"
+clj꞉tictactoe.core꞉> 
+; Evaluating file: cli.clj
+#'tictactoe.cli/display-board
+clj꞉tictactoe.cli꞉> 
+(tictactoe.cli/display-board board)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:477:1).
+; Unable to resolve symbol: board in this context
+clj꞉tictactoe.cli꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/display-board board)
+  |   |  
+----------------
+  |   |  
+----------------
+  |   |  
+nil
+clj꞉tictactoe.core꞉> 
+; Evaluating file: cli.clj
+#'tictactoe.cli/display-board
+clj꞉tictactoe.cli꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/display-board board)
+  |   |  
+---------
+  |   |  
+---------
+  |   |  
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+false
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :o,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :x,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+(tictactoe.cli/display-board board)
+  | x |  
+---------
+  | o |  
+---------
+  |   |  
+nil
+clj꞉tictactoe.core꞉> 
