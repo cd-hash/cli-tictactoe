@@ -3,14 +3,17 @@
 
 (defn check-player [player]
   (case player
-    :x :x
-    :o :o
+    :x player
+    :o player
     nil))
 
 (defn valid-location [board square]
-  (if (and (= (get board square) :empty) (some? square))
-   true
-   false))
+  (case (get board square)
+    :empty true
+    :x nil
+    :o nil
+    nil nil
+    :else nil))
 
 (defn place-piece [board location player]
   (if (valid-location board location)
@@ -21,9 +24,8 @@
 (defn play-move [board row col player]
   (let [tile (square/create-new-square row col)]
        (if-some [player (check-player player)]
-         player
-         :error)
-    (place-piece board tile player)))
+         (place-piece board tile player)
+         :invalid-player)))
 
 
 (comment
@@ -31,4 +33,6 @@
   (valid-location board (square/create-new-square 1 2))
   (def board (place-piece board (square/create-new-square 1 2) :x))
   (def board (play-move board 2 2 :o))
+  (def board (play-move board 2 3 :y))
+  (def board (play-move board 4 3 :x))
   board)

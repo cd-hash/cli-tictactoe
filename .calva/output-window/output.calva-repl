@@ -108,3 +108,315 @@ clj꞉tictactoe.core꞉> 
  {:row 2, :col 0} :empty,
  {:row 1, :col 2} :x}
 clj꞉tictactoe.core꞉> 
+({:row 0, :col 0}
+ {:row 0, :col 1}
+ {:row 0, :col 2}
+ {:row 1, :col 0}
+ {:row 1, :col 1}
+ {:row 1, :col 2}
+ {:row 2, :col 0}
+ {:row 2, :col 1}
+ {:row 2, :col 2})
+clj꞉tictactoe.square꞉> 
+; Evaluating file: square.clj
+nil
+clj꞉tictactoe.square꞉> 
+({:row 1, :col 1}
+ {:row 1, :col 2}
+ {:row 1, :col 3}
+ {:row 2, :col 1}
+ {:row 2, :col 2}
+ {:row 2, :col 3}
+ {:row 3, :col 1}
+ {:row 3, :col 2}
+ {:row 3, :col 3})
+clj꞉tictactoe.square꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :empty,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.square꞉> 
+(create-new-square 4 4)
+{:row 4, :col 4}
+clj꞉tictactoe.square꞉> 
+(create-new-square 0 0)
+nil
+clj꞉tictactoe.square꞉> 
+(int-in-range? lower-bound upper-bound 2)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:152:1).
+; Unable to resolve symbol: int-in-range? in this context
+clj꞉tictactoe.square꞉> 
+(< lower-bound 4 upper-bound)
+false
+clj꞉tictactoe.square꞉> 
+(< lower-bound 3 upper-bound)
+true
+clj꞉tictactoe.square꞉> 
+(< lower-bound 0 upper-bound)
+false
+clj꞉tictactoe.square꞉> 
+; Evaluating file: square.clj
+nil
+clj꞉tictactoe.square꞉> 
+({:row 1, :col 1}
+ {:row 1, :col 2}
+ {:row 1, :col 3}
+ {:row 2, :col 1}
+ {:row 2, :col 2}
+ {:row 2, :col 3}
+ {:row 3, :col 1}
+ {:row 3, :col 2}
+ {:row 3, :col 3})
+clj꞉tictactoe.square꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :empty,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.square꞉> 
+(create-new-square 4 4)
+nil
+clj꞉tictactoe.square꞉> 
+(create-new-square 0 0)
+nil
+clj꞉tictactoe.square꞉> 
+(create-new-square 1 0)
+nil
+clj꞉tictactoe.square꞉> 
+(create-new-square 3 4)
+nil
+clj꞉tictactoe.square꞉> 
+; Evaluating file: square.clj
+nil
+clj꞉tictactoe.square꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+{{:row 1, :col 1} :x,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :x,
+ {:row 2, :col 1} :o,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :empty,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.square꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+(check-player :x)
+:x
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+nil
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :empty,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+false
+clj꞉tictactoe.core꞉> 
+nil
+clj꞉tictactoe.core꞉> 
+nil
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+nil
+clj꞉tictactoe.core꞉> 
+; Evaluating file: square.clj
+nil
+clj꞉tictactoe.square꞉> 
+(create-new-square 1 2)
+nil
+clj꞉tictactoe.square꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :empty,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.square꞉> 
+(create-new-square 1 1)
+nil
+clj꞉tictactoe.square꞉> 
+(create-new-square 2 2)
+{:row 2, :col 2}
+clj꞉tictactoe.square꞉> 
+(- upper-bound 1)
+3
+clj꞉tictactoe.square꞉> 
+(- 1 upper-bound)
+-3
+clj꞉tictactoe.square꞉> 
+; Evaluating file: square.clj
+nil
+clj꞉tictactoe.square꞉> 
+(create-new-square 1 1)
+nil
+clj꞉tictactoe.square꞉> 
+; Evaluating file: square.clj
+nil
+clj꞉tictactoe.square꞉> 
+(create-new-square 1 1)
+{:row 1, :col 1}
+clj꞉tictactoe.square꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+#function[tictactoe.square/create-new-square]
+clj꞉tictactoe.core꞉> 
+{:row 1, :col 2}
+clj꞉tictactoe.core꞉> 
+true
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :x,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :o,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :x,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :o,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :y,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :x,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+(if-some false 1 0)
+; Syntax error macroexpanding if-some at (.calva/output-window/output.calva-repl:345:1).
+; if-some requires a vector for its binding in tictactoe.core:345
+clj꞉tictactoe.core꞉> 
+(if-some [x false] 1 0)
+1
+clj꞉tictactoe.core꞉> 
+(if-some [x nil] 1 0)
+0
+clj꞉tictactoe.core꞉> 
+#'tictactoe.square/board
+clj꞉tictactoe.square꞉> 
+(get board nil)
+nil
+clj꞉tictactoe.square꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+(if-let [x :occupied] 1 0)
+1
+clj꞉tictactoe.core꞉> 
+board
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :o,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :y,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :x,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+(if-some [player (check-player :y)]
+  1
+  0)
+0
+clj꞉tictactoe.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+true
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :empty,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :x,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+{{:row 1, :col 1} :empty,
+ {:row 2, :col 2} :o,
+ {:row 3, :col 3} :empty,
+ {:row 2, :col 1} :empty,
+ {:row 2, :col 3} :empty,
+ {:row 3, :col 2} :empty,
+ {:row 1, :col 2} :x,
+ {:row 3, :col 1} :empty,
+ {:row 1, :col 3} :empty}
+clj꞉tictactoe.core꞉> 
+#'tictactoe.core/board
+clj꞉tictactoe.core꞉> 
+:invalid-player
+clj꞉tictactoe.core꞉> 
+:invalid-player
+clj꞉tictactoe.core꞉> 
+false
+clj꞉tictactoe.core꞉> 
